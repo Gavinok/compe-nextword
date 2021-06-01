@@ -27,7 +27,7 @@ Source.collect = function(self, input, callback)
       end
       return callback({incomplete = true, items = results})
     end
-    job = Job:new({command = "nextword", cwd = vim.fn.getcwd(), on_stdout = _0_})
+    job = Job:new({command = "nextword", on_stdout = _0_})
     job:start()
     job:send((input .. "\n"))
   end

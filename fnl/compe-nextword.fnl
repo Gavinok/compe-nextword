@@ -27,7 +27,6 @@
   "Returns the suggested completion based on given input"
   (var results [])
   (let [ job (Job:new {:command  "nextword"
-                       :cwd  (vim.fn.getcwd)
                        :on_stdout  (fn [_ data]
                                      (let [pieces (vim.split data  " "  true)]
                                        (each [ _ v (ipairs pieces) ]
