@@ -24,7 +24,7 @@
   (self:collect context.context.before_line context.callback))
 
 (fn Source.collect [self input callback]
-  "returns the suggested completion based on given input"
+  "Returns the suggested completion based on given input"
   (var results [])
   (let [ job (Job:new {:command  "nextword"
                        :cwd  (vim.fn.getcwd)
