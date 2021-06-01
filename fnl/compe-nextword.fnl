@@ -1,3 +1,5 @@
+;; TODO add Source.documentation(self, context)
+;;   and use a dictionary to find the definition of context.completed.word
 (local compe (require :compe))
 (local Job (require :plenary.job))
 
