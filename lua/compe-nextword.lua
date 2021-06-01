@@ -11,8 +11,8 @@ end
 Source.determine = function(self, context)
   return compe.helper.determine(context)
 end
-Source.complete = function(self, args)
-  return self:collect(args.context.before_line, args.callback)
+Source.complete = function(self, context)
+  return self:collect(context.context.before_line, context.callback)
 end
 Source.collect = function(self, input, callback)
   local results = {}
