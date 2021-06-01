@@ -7,10 +7,11 @@ You also need to install [Nextword](https://github.com/high-moctane/nextword) an
 
 ### Using plug:
 
+```vim
 Plug 'nvim-lua/plenary.nvim'
 Plug 'hrsh7th/nvim-compe'
 Plug 'Gavinok/compe-nextword'
-
+```
 
 ### Using Packer:
 
