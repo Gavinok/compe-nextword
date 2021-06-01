@@ -1,7 +1,7 @@
 .PHONY: deps compile test
 .SUFFIXES: .lua .fnl .ps .pdf .PDF .html
 
-all: lua/compe_nextword.lua
+all: lua/compe-nextword.lua
 
-lua/compe_nextword.lua: fnl/compe_nextword.fnl
+lua/compe-nextword.lua: fnl/compe-nextword.fnl
 	fennel --compile $< > $@
