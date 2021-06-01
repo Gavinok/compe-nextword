@@ -1,3 +1,3 @@
 if has("nvim")
-  lua require("compe_nextword")
+  lua require("compe-nextword")
 endif
