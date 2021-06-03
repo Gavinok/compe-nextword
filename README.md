@@ -1,6 +1,8 @@
 # compe-nextword
 Provides intelligent English autocomplete for compe-nvim via nextword.
 
+![demo](images/compe-nextword.gif)
+
 ## Install
 You also need to install [Nextword](https://github.com/high-moctane/nextword) and
 [Nextword-data](https://github.com/high-moctane/nextword-data).
