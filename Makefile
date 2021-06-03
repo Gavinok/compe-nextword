@@ -1,5 +1,5 @@
-.PHONY: deps compile test
-.SUFFIXES: .lua .fnl .ps .pdf .PDF .html
+.PHONY: all format
+.SUFFIXES: .lua .fnl
 SRCFILE=compe-nextword
 
 all: format lua/$(SRCFILE).lua
