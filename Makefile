@@ -1,10 +1,11 @@
 .PHONY: deps compile test
 .SUFFIXES: .lua .fnl .ps .pdf .PDF .html
+SRCFILE=compe-nextword
 
-all: format lua/compe-nextword.lua
+all: format lua/$(SRCFILE).lua
 
-format: fnl/compe-nextword.fnl 
+format: fnl/$(SRCFILE).fnl 
 	fnlfmt --fix $<
 
-lua/compe-nextword.lua: fnl/compe-nextword.fnl
+lua/$(SRCFILE).lua: fnl/$(SRCFILE).fnl
 	fennel --compile $< > $@
